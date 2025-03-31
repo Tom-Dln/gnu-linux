@@ -453,7 +453,7 @@ sudo apt install apache2-utils -y
 
 ## Commande exécutée :
 ```
-ab -n 1000 -c 10 http://tom.delaunay.caen.mds-project.fr/
+ab -n 1000 -c 10 https://tom.delaunay.caen.mds-project.fr/
 ```
 
 - `-n 1000` : nombre total de requêtes
@@ -463,32 +463,7 @@ ab -n 1000 -c 10 http://tom.delaunay.caen.mds-project.fr/
 
 ## Résultats du test
 
-- **Requêtes complètes :** 1000
-- **Requêtes échouées :** 0
-- **Réponses non-2xx :** 1000 (probablement redirection ou erreur de proxy)
-- **Temps total :** 0.140 secondes
-- **Requêtes par seconde :** 7126.62 req/s
-- **Temps moyen par requête :** 1.403 ms
-- **Débit :** 2644.64 KB/s
-
----
-
-### Détail des temps de connexion
-
-- Temps de connexion moyen : 0 ms
-- Temps de traitement moyen : 1 ms
-- Temps d’attente moyen : 1 ms
-- Temps total maximum : 9 ms
-
----
-
-### Distribution des temps de réponse
-
-- 50% des requêtes ≤ 1 ms
-- 75% des requêtes ≤ 1 ms
-- 95% des requêtes ≤ 2 ms
-- 99% des requêtes ≤ 8 ms
-- 100% des requêtes ≤ 9 ms
+![Résulat Test de Charge](Résultat-Test_de_Charge.jpg)
 
 # Étape 6 – Maintenance & Sauvegarde automatique
 
